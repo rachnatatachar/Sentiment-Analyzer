@@ -1,0 +1,51 @@
+username,feedback,sentiment
+user_1,The pasta was delicious and well seasoned.,Positive
+user_2,I found the dessert too sweet for my taste.,Positive
+user_3,Loved the cozy ambiance and the service.,Positive
+user_4,The food was okay but took too long to arrive.,Positive
+user_5,Amazing flavors! Will definitely come back.,Positive
+user_6,Disappointed with the portion size.,Negative
+user_7,The burger was juicy and flavorful.,Neutral
+user_8,Service was slow and not very friendly.,Negative
+user_9,My salad was fresh and crunchy.,Positive
+user_10,I didn’t enjoy the soup; it was too salty.,Positive
+user_11,Best meal I've had in a while!,Positive
+user_12,Not worth the hype.,Negative
+user_13,Incredible service and tasty food.,Positive
+user_14,Mediocre food but great location.,Positive
+user_15,The pizza crust was burnt.,Neutral
+user_16,Fantastic presentation and taste!,Positive
+user_17,Very average experience overall.,Neutral
+user_18,Enjoyed every bite of the risotto.,Positive
+user_19,The tacos lacked flavor.,Neutral
+user_20,"Wonderful atmosphere, decent food.",Positive
+user_21,My coffee was cold and bitter.,Negative
+user_22,Loved the vegan options!,Positive
+user_23,Staff were inattentive and rude.,Negative
+user_24,Absolutely divine chocolate cake.,Positive
+user_25,Too expensive for the quality.,Negative
+user_26,Fresh ingredients and quick service.,Positive
+user_27,I wouldn't recommend the sushi.,Neutral
+user_28,Charming decor and delicious food.,Positive
+user_29,The chicken was dry and bland.,Negative
+user_30,Perfectly cooked steak!,Positive
+user_31,Unpleasant smell near our table.,Negative
+user_32,The breakfast platter was amazing.,Positive
+user_33,Rushed and impersonal service.,Neutral
+user_34,Loved the live music with dinner.,Positive
+user_35,Very greasy and unhealthy options.,Neutral
+user_36,The smoothie bowl was refreshing.,Positive
+user_37,Did not meet my expectations.,Neutral
+user_38,Great place for a family dinner.,Positive
+user_39,Poor hygiene at the counter.,Negative
+user_40,Generous portions and good prices.,Positive
+user_41,Burnt toast and undercooked eggs.,Neutral
+user_42,Everything tasted homemade.,Neutral
+user_43,Will be coming back for sure.,Positive
+user_44,"It was just okay, nothing special.",Positive
+user_45,Dessert was the highlight!,Neutral
+user_46,Unorganized and noisy environment.,Neutral
+user_47,Friendly staff and clean place.,Positive
+user_48,Didn't like the seasoning used.,Neutral
+user_49,Food was excellent but overpriced.,Positive
+user_50,Truly enjoyed the evening!,Positive
