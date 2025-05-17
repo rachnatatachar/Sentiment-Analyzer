@@ -1,45 +1,87 @@
-# Sentiment-Analyzer
+## Sentiment Analyzer – From TextBlob to Transformer-Based Models
 
-__Project Overview__<br>
-This project is the first version of a sentiment analysis tool built in Python using the TextBlob library. The goal is to evaluate and categorize customer feedback as Positive, Neutral, or Negative based on sentiment polarity. <br>
-This notebook is part of a series where I explore and compare sentiment analysis approaches, starting with lexicon-based methods and moving toward more context-aware machine learning models.
+### Project Overview
 
-__Objectives__<br>
- - Evaluate sentiment in customer feedback using TextBlob, a lexicon-based sentiment analysis tool
- - Assign sentiment labels based on polarity thresholds
- - Analyze the accuracy of the results through manual validation
- - Use this baseline to inform the next iteration of model selection and approach
+This project showcases a progressive sentiment analysis pipeline built in Python to evaluate customer feedback from a sample food blog dataset.
 
-__Tools & Technologies__<br>
- - Python (executed in the Jupyter)
- - `TextBlob` for sentiment scoring
- - `pandas` for data processing
- - Sample CSV dataset with 50 feedback entries from a food blog scenario
+I began this work by implementing a lexicon-based model using `TextBlob`, which initially seemed sufficient for the task. However, through manual validation, I discovered the model lacked contextual accuracy. That insight led me to improve the approach by applying transformer-based models from HuggingFace—first a **2-class sentiment model**, and then a **3-class sentiment model** that can also classify **Neutral** sentiment.
 
-__Files Included__<br>
-| File                                   | Description                                                   |
-| -------------------------------------- | ------------------------------------------------------------- |
-| `sentiment_textblob.ipynb`             | Jupyter notebook using `TextBlob` to score and label feedback |
-| `sample_food_feedback.csv`             | Input file containing raw feedback entries                    |
-| `feedback_with_textblob_sentiment.csv` | Output with added polarity score and sentiment label per row  |
+This repository contains all three approaches and demonstrates how I validated and iterated to achieve higher accuracy in sentiment classification.
 
-__Key Observations__<br>
- - This approach provided a working sentiment classifier with polarity and subjectivity scores.
- - However, accuracy was noticeably off in several cases:
-   - Mixed-tone reviews (e.g., “okay but slow”) were labeled as Positive
-   - Sentences like “too sweet for my taste” were also tagged Positive, likely due to word-level interpretation
- - Contextual understanding was limited, as expected from a rule-based model
+---
 
-__Reflection__<br>
- - Although TextBlob is a well-known method, it lacks the nuance required for high-accuracy sentiment classification in real-world feedback.
- - It also provided a strong foundation for evaluating better-performing models based on contextual embeddings and supervised learning.
+### Objectives
 
-__What's Coming Next?__ <br>
-To improve sentiment classification:
- - I have explored HuggingFace 2-class transformer model to assess contextual performance.
- - This next version is built directly upon the learnings from this one.
+* Build an initial baseline using `TextBlob`
+* Validate output quality through manual review of misclassified examples
+* Improve sentiment classification using context-aware transformer models
+* Showcase a product-like mindset in testing, evaluating, and refining the pipeline
 
-__How to Run__<br>
- - Download this repository
- - Open `sentiment_textblob.ipynb` in Google Colab or Jupyter
- - Run all cells to load data, process sentiment, and export results
+---
+
+### Tools & Technologies
+
+* Python (executed in Google Colab)
+* `TextBlob` for lexicon-based sentiment scoring
+* HuggingFace `transformers` for contextual deep learning models
+* `pandas` for data manipulation
+* `cardiffnlp/twitter-roberta-base-sentiment` and `distilbert-base-uncased-finetuned-sst-2-english` models
+
+---
+
+### Files Included
+
+| File                                    | Description                                                |
+| --------------------------------------- | ---------------------------------------------------------- |
+| `sample_food_feedback.csv`              | Input file containing 50 customer feedback entries         |
+| `Sentiment Analyzer_TextBlob.ipynb`     | Notebook using `TextBlob` for rule-based sentiment scoring |
+| `sample_food_feedback_with_sentiment.csv.csv` | Output file from TextBlob approach                         |
+| `HuggingFace_Sentiment_Analysis_2ClassModel.ipynb`             | Notebook using HuggingFace 2-class sentiment model         |
+| `feedback_with_2_class_sentiment.csv` | Output file from 2-class model                             |
+| `HuggingFace_Sentiment_Analysis_2ClassModel.ipynb`             | Notebook using HuggingFace 3-class sentiment model         |
+| `feedback_with_3_class_sentiment.csv` | Output file from 3-class model (includes NEUTRAL labels)   |
+
+---
+
+### Key Observations & Evolution
+
+#### **Version 1: TextBlob (Lexicon-Based)**
+
+* Labels based on polarity thresholds
+* Easy to implement, but limited context awareness
+* Misclassified mixed-tone or nuanced feedback
+* Helpful for initial experimentation and understanding sentiment scoring
+
+#### **Version 2: HuggingFace 2-Class Transformer**
+
+* Used `distilbert-base-uncased-finetuned-sst-2-english`
+* Great improvement in identifying positive vs. negative sentiment
+* Accurately handled negation and contrast (e.g., “great food but slow service”)
+* Lacked support for **neutral** classification
+
+#### **Version 3: HuggingFace 3-Class Transformer**
+
+* Used `cardiffnlp/twitter-roberta-base-sentiment`
+* Added the ability to classify **Neutral** sentiment
+* Delivered the most accurate results across all test cases
+* Highly suitable for product feedback use cases with nuanced tone
+
+---
+
+### Reflections
+
+This end-to-end exploration helped reinforce that:
+
+* Lexicon-based models are useful as a starting point, but not production-ready for nuanced real-world feedback
+* Context-aware transformer models significantly improve classification accuracy
+* Adding support for **neutral sentiment** is critical in many product or customer-focused applications
+
+---
+
+### How to Run
+
+1. Clone or download this repository
+2. Choose any of the `.ipynb` notebooks (`TextBlob`, `2-Class`, or `3-Class`)
+3. Open in **Google Colab** or **Jupyter Notebook**
+4. Run all cells to load data, compute sentiment, and export results
+5. Compare the outputs to observe performance differences
