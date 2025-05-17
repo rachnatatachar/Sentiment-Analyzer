@@ -1,0 +1,51 @@
+username,feedback,hf_sentiment,hf_confidence
+user_1,The pasta was delicious and well seasoned.,POSITIVE,0.9998593330383301
+user_2,I found the dessert too sweet for my taste.,NEGATIVE,0.9942640662193298
+user_3,Loved the cozy ambiance and the service.,POSITIVE,0.9998658895492554
+user_4,The food was okay but took too long to arrive.,NEGATIVE,0.9990647435188293
+user_5,Amazing flavors! Will definitely come back.,POSITIVE,0.9998817443847656
+user_6,Disappointed with the portion size.,NEGATIVE,0.9997891783714294
+user_7,The burger was juicy and flavorful.,POSITIVE,0.9998489618301392
+user_8,Service was slow and not very friendly.,NEGATIVE,0.9997691512107849
+user_9,My salad was fresh and crunchy.,POSITIVE,0.9989708662033081
+user_10,I didn’t enjoy the soup; it was too salty.,NEGATIVE,0.9984619617462158
+user_11,Best meal I've had in a while!,POSITIVE,0.9995535016059875
+user_12,Not worth the hype.,NEGATIVE,0.999803364276886
+user_13,Incredible service and tasty food.,POSITIVE,0.9998871088027954
+user_14,Mediocre food but great location.,POSITIVE,0.9917426705360413
+user_15,The pizza crust was burnt.,NEGATIVE,0.9995474219322205
+user_16,Fantastic presentation and taste!,POSITIVE,0.9998863935470581
+user_17,Very average experience overall.,NEGATIVE,0.5754452347755432
+user_18,Enjoyed every bite of the risotto.,POSITIVE,0.9998575448989868
+user_19,The tacos lacked flavor.,NEGATIVE,0.9997641444206238
+user_20,"Wonderful atmosphere, decent food.",POSITIVE,0.999884843826294
+user_21,My coffee was cold and bitter.,NEGATIVE,0.9995517134666443
+user_22,Loved the vegan options!,POSITIVE,0.9997833371162415
+user_23,Staff were inattentive and rude.,NEGATIVE,0.9996416568756104
+user_24,Absolutely divine chocolate cake.,POSITIVE,0.9998476505279541
+user_25,Too expensive for the quality.,NEGATIVE,0.9997450709342957
+user_26,Fresh ingredients and quick service.,POSITIVE,0.9997972846031189
+user_27,I wouldn't recommend the sushi.,NEGATIVE,0.9637492299079895
+user_28,Charming decor and delicious food.,POSITIVE,0.9998795986175537
+user_29,The chicken was dry and bland.,NEGATIVE,0.9997599720954895
+user_30,Perfectly cooked steak!,POSITIVE,0.9998422861099243
+user_31,Unpleasant smell near our table.,NEGATIVE,0.9994015693664551
+user_32,The breakfast platter was amazing.,POSITIVE,0.9998782873153687
+user_33,Rushed and impersonal service.,NEGATIVE,0.9994165897369385
+user_34,Loved the live music with dinner.,POSITIVE,0.9998663663864136
+user_35,Very greasy and unhealthy options.,NEGATIVE,0.9997097849845886
+user_36,The smoothie bowl was refreshing.,POSITIVE,0.9998729228973389
+user_37,Did not meet my expectations.,NEGATIVE,0.9997771382331848
+user_38,Great place for a family dinner.,POSITIVE,0.9998650550842285
+user_39,Poor hygiene at the counter.,NEGATIVE,0.9997850060462952
+user_40,Generous portions and good prices.,POSITIVE,0.9998779296875
+user_41,Burnt toast and undercooked eggs.,NEGATIVE,0.9865276217460632
+user_42,Everything tasted homemade.,POSITIVE,0.9990761280059814
+user_43,Will be coming back for sure.,POSITIVE,0.9991926550865173
+user_44,"It was just okay, nothing special.",NEGATIVE,0.8276376724243164
+user_45,Dessert was the highlight!,POSITIVE,0.9994749426841736
+user_46,Unorganized and noisy environment.,NEGATIVE,0.9993057250976562
+user_47,Friendly staff and clean place.,POSITIVE,0.9998434782028198
+user_48,Didn't like the seasoning used.,NEGATIVE,0.9975135326385498
+user_49,Food was excellent but overpriced.,NEGATIVE,0.9672418236732483
+user_50,Truly enjoyed the evening!,POSITIVE,0.9998838901519775
